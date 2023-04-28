@@ -1,0 +1,19 @@
+.header-top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    margin: 20px 0px 10px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #706F6F;
+}
+
+.header-time {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #403F3F;
+}
