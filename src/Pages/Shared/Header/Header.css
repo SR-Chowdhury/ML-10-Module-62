@@ -17,3 +17,27 @@
     line-height: 30px;
     color: #403F3F;
 }
+
+.marquee-section {
+    background: #F3F3F3;
+    padding: 16px;
+}
+
+.primary-btn {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    background: #D72050;
+    padding: 10px 25px;
+    border: 0;
+}
+
+.login-btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 7px 30px;
+    color: #FFFFFF;
+    background: #403F3F;
+}
