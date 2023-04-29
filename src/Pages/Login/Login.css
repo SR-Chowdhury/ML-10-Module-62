@@ -1,0 +1,26 @@
+.titleForm {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    text-align: center;
+    color: #403F3F;
+    margin-bottom: 50px;
+}
+
+.formContainer {
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 45%;
+    margin: 0 auto;
+    padding: 70px 70px 30px 70px;
+}
+
+.formBtn {
+    background: #403F3F;
+    border-radius: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 8px 0px;
+    border: 0;
+}
