@@ -1,0 +1,21 @@
+.left-nav-top-header {
+    background: #E7E7E7;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.left-nav-top-header h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #403F3F;
+}
+
+.single-category {
+    margin: 30px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9F9F9F;
+}
