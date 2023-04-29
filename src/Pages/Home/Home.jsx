@@ -1,10 +1,18 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import RightNav from '../Shared/RightNav/RightNav';
 
 const Home = () => {
     return (
-        <div>
-            <h1>This is HOme</h1>
-        </div>
+        <Container>
+            <Row>
+                <Col>1 of 3</Col>
+                <Col>2 of 3</Col>
+                <Col>
+                    <RightNav/>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

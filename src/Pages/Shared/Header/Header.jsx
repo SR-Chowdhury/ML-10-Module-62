@@ -37,7 +37,6 @@ const Header = () => {
                             <Nav.Link href="#login">
                                 <button className="login-btn">Login</button>
                             </Nav.Link>
-
                         </Nav>
                     </Navbar.Collapse>
 

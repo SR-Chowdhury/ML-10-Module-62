@@ -3,6 +3,10 @@
     margin-bottom: 30px;
 }
 
+.header-bottom {
+    margin-bottom: 80px;
+}
+
 .header-title {
     margin: 20px 0px 10px 0px;
     font-weight: 400;
@@ -41,3 +45,4 @@
     color: #FFFFFF;
     background: #403F3F;
 }
+
