@@ -9,7 +9,9 @@ const Category = () => {
 
     return (
         <div>
-            <h1>Category: {categoryNews.length}</h1>
+            
+            {id && <h1>Category: {categoryNews.length}</h1>}
+            
             {
                 categoryNews.length > 1 ?
                 categoryNews.map(news => <NewsCard key={news._id} news = {news}/>) :
