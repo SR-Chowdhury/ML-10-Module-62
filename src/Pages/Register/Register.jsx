@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
 import { Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Register = () => {
 
     const { user, createUser } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
@@ -29,6 +30,7 @@ const Register = () => {
             .then(reult => {
                 const loggedInUser = reult.user;
                 setError('');
+                navigate('/category/0');
                 setSuccess('Successfully Created User!');
                 form.reset();
             })
