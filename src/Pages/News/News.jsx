@@ -8,7 +8,7 @@ const News = () => {
 
     const news = useLoaderData();
 
-    const { _id, category_id, title, author, image_url, details, rating, total_view } = news;
+    const { category_id, title, image_url, details } = news;
 
     return (
         <div>
@@ -21,7 +21,7 @@ const News = () => {
                         {details}
                     </Card.Text>
                     <div>
-                        <Link to={``}><button className="primary-btn me-1"><FaArrowLeft/> All news in this category</button></Link>
+                        <Link to={`/category/${category_id}`}><button className="primary-btn me-1"><FaArrowLeft/> All news in this category</button></Link>
                     </div>
                 </Card.Body>
             </Card>
