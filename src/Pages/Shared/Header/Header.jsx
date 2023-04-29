@@ -4,6 +4,7 @@ import logo from '/public/img/logo.png';
 import moment from 'moment/moment';
 import Marquee from "react-fast-marquee";
 import { Nav, Navbar } from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap'
 
 const Header = () => {
     return (
@@ -29,11 +30,13 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
+                            <LinkContainer to="/">
+                                <Nav.Link >Home</Nav.Link>
+                            </LinkContainer>
                             <Nav.Link href="#link">About</Nav.Link>
                             <Nav.Link href="#link">Career</Nav.Link>
                         </Nav>
-                        <Nav>   
+                        <Nav>
                             <Nav.Link href="#login">
                                 <button className="login-btn">Login</button>
                             </Nav.Link>

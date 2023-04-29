@@ -1,0 +1,27 @@
+.singleNewsCard {
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.singleCardImg img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.authorName {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #403F3F;
+    margin-bottom: 0;
+}
+
+.publishDate {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #706F6F;
+}
