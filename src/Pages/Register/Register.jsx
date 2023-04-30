@@ -10,6 +10,11 @@ const Register = () => {
 
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
+    const [accepted, setAccepted] = useState(false);
+
+    const handleCheckbox = (event) => {
+        setAccepted(event.target.checked);
+    }
 
     const handleSubmit = (event) => {
 
@@ -64,10 +69,10 @@ const Register = () => {
                     <Form.Control type="password" name="confirmPassword" required placeholder="*******" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Accept Terms & Conditions" />
+                    <Form.Check type="checkbox" onClick={handleCheckbox} label="Accept Terms & Conditions" />
                 </Form.Group>
                 <div>
-                    <button className='formBtn' type="submit">Register</button>
+                    <button className='formBtn' disabled={!accepted} type="submit">Register</button>
                 </div>
                 <p className='text-muted text-center mt-3'>Already Have An Account ? <Link to="/login">Login</Link></p>
                 {
