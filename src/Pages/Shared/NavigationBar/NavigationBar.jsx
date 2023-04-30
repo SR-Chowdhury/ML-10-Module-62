@@ -3,15 +3,17 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { FaUserCircle } from 'react-icons/fa';
 import { LinkContainer } from 'react-router-bootstrap';
 import { AuthContext } from '../../../Providers/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
 
+    const navigate = useNavigate();
+
     const handleLogout = () => {
         logOut()
-            .then()
+            .then( () => navigate("/category/0"))
             .catch()
     }
 
