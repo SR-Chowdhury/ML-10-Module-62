@@ -5,6 +5,7 @@ import LeftNav from '../Shared/LeftNav/LeftNav';
 import { Outlet } from 'react-router-dom';
 
 const Home = () => {
+
     return (
        <div>
             <h1>Mian Content Comming .....</h1>

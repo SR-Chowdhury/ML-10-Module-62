@@ -3,9 +3,12 @@ import './Login.css';
 import { Container, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import useSetTitle from '../../Hooks/useSetTitle';
 
 
 const Login = () => {
+
+    useSetTitle('Login');
 
     const { user, signInUser } = useContext(AuthContext);
     const location = useLocation();
